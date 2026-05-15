@@ -373,211 +373,891 @@ const SCALE_SCORE_MAPS = {
  * CONFIGURAÇÃO DAS PERGUNTAS (DINÂMICO)
  **************************************************************/
 const FORM_QUESTIONS = [
-  
+  {
+    name: "1",
+    type: "radio",
+    section: "Psicose — Triagem Geral",
+    text: "Em algum momento da sua vida, você sentiu que estava percebendo, ouvindo, vendo ou acreditando em coisas que outras pessoas não conseguiam perceber ou confirmar?",
+    options: YNP,
+    scale: "YNP",
+    reverse: false,
+    required: false
+  },
+  {
+    name: "2",
+    type: "radio",
+    section: "Psicose — Triagem Geral",
+    text: "Você já teve períodos em que familiares, amigos ou profissionais disseram que você parecia fora da realidade, muito desconfiado, confuso ou acreditando em coisas improváveis?",
+    options: YNP,
+    scale: "YNP",
+    reverse: false,
+    required: false
+  },
+  {
+    name: "3",
+    type: "radio",
+    section: "Psicose — Triagem Geral",
+    text: "Você já passou por fases em que tinha muita dificuldade de diferenciar o que era real do que poderia ser impressão, medo, pensamento ou interpretação sua?",
+    options: FREQ5,
+    scale: "FREQ5",
+    reverse: false,
+    required: false
+  },
+  {
+    name: "4",
+    type: "radio",
+    section: "Psicose — Triagem Geral",
+    text: "Você já acreditou com muita convicção em algo que outras pessoas próximas consideravam estranho, impossível, exagerado ou sem evidências?",
+    options: YNP,
+    scale: "YNP",
+    reverse: false,
+    required: false
+  },
 
-{
-  name: "3",
-  section: "Sintomas Psicóticos / Desorganização / Funcionamento Geral",
-  type: "radio",
-  text: "Você sente que acredita em coisas muito improváveis ou insiste em ideias que outras pessoas dizem não ser reais?",
-  options: YNP,
-  scale: "YNP",
-  reverse: false,
-  required: false
-},
-{
-  name: "4",
-  section: "Sintomas Psicóticos / Desorganização / Funcionamento Geral",
-  type: "radio",
-  text: "Você já ouviu vozes, viu pessoas ou coisas que outras pessoas não percebiam?",
-  options: YNP,
-  scale: "YNP",
-  reverse: false,
-  required: false
-},
-{
-  name: "5",
-  section: "Sintomas Psicóticos / Desorganização / Funcionamento Geral",
-  type: "radio",
-  text: "Você já teve a sensação de escutar algo invisível ou acabou falando sozinho como se estivesse respondendo a algo?",
-  options: YNP,
-  scale: "YNP",
-  reverse: false,
-  required: false
-},
-{
-  name: "6",
-  section: "Sintomas Psicóticos / Desorganização / Funcionamento Geral",
-  type: "radio",
-  text: "Você sente que às vezes fala de forma confusa, muda de assunto sem perceber ou tem dificuldade para se fazer entender?",
-  options: YNP,
-  scale: "YNP",
-  reverse: false,
-  required: false
-},
-{
-  name: "7",
-  section: "Sintomas Psicóticos / Desorganização / Funcionamento Geral",
-  type: "radio",
-  text: "Você percebe que às vezes se veste, age ou guarda objetos de um jeito que outras pessoas consideram estranho ou diferente do habitual?",
-  options: YNP,
-  scale: "YNP",
-  reverse: false,
-  required: false
-},
-{
-  name: "8",
-  section: "Sintomas Psicóticos / Desorganização / Funcionamento Geral",
-  type: "radio",
-  text: "Você tem ficado mais calado, com menos expressão no rosto ou com dificuldade de demonstrar emoções?",
-  options: YNP,
-  scale: "YNP",
-  reverse: false,
-  required: false
-},
-{
-  name: "9",
-  section: "Sintomas Psicóticos / Desorganização / Funcionamento Geral",
-  type: "radio",
-  text: "Você tem se sentido desmotivado, com pouca energia ou sem vontade de fazer as coisas?",
-  options: YNP,
-  scale: "YNP",
-  reverse: false,
-  required: false
-},
-{
-  name: "10",
-  section: "Sintomas Psicóticos / Desorganização / Funcionamento Geral",
-  type: "radio",
-  text: "Você tem se isolado de amigos, familiares ou evitado conviver com outras pessoas?",
-  options: YNP,
-  scale: "YNP",
-  reverse: false,
-  required: false
-},
-{
-  name: "11",
-  section: "Sintomas Psicóticos / Desorganização / Funcionamento Geral",
-  type: "radio",
-  text: "Você percebe que esquece coisas simples, se perde em conversas ou fica desligado com frequência?",
-  options: YNP,
-  scale: "YNP",
-  reverse: false,
-  required: false
-},
-{
-  name: "12",
-  section: "Sintomas Psicóticos / Desorganização / Funcionamento Geral",
-  type: "radio",
-  text: "Você tem dificuldade para organizar tarefas ou tomar decisões básicas no dia a dia?",
-  options: YNP,
-  scale: "YNP",
-  reverse: false,
-  required: false
-},
-{
-  name: "13",
-  section: "Sintomas Psicóticos / Desorganização / Funcionamento Geral",
-  type: "radio",
-  text: "Você sente dificuldade para reconhecer que está com algum problema ou para aceitar ajuda?",
-  options: YNP,
-  scale: "YNP",
-  reverse: false,
-  required: false
-},
-{
-  name: "14",
-  section: "Sintomas Psicóticos / Desorganização / Funcionamento Geral",
-  type: "radio",
-  text: "Você já percebeu momentos em que fica muito imóvel, repete gestos ou fala de um jeito estranho?",
-  options: YNP,
-  scale: "YNP",
-  reverse: false,
-  required: false
-},
-{
-  name: "15",
-  section: "Sintomas Psicóticos / Desorganização / Funcionamento Geral",
-  type: "radio",
-  text: "Esses comportamentos acontecem há muito tempo ou aparecem em fases específicas?",
-  options: YNP,
-  scale: "YNP",
-  reverse: false,
-  required: false
-},
-{
-  name: "16",
-  section: "Sintomas Psicóticos / Desorganização / Funcionamento Geral",
-  type: "radio",
-  text: "Você percebe queda no seu trabalho, nos estudos ou nas tarefas do dia a dia por causa desses comportamentos?",
-  options: YNP,
-  scale: "YNP",
-  reverse: false,
-  required: false
-},
-{
-  name: "17",
-  section: "Sintomas Psicóticos / Desorganização / Funcionamento Geral",
-  type: "radio",
-  text: "Você já pensou em se machucar, machucar alguém ou fazer algo perigoso?",
-  options: YNP,
-  scale: "YNP",
-  reverse: false,
-  required: false
-},
-{
-  name: "18",
-  section: "Sintomas Psicóticos / Desorganização / Funcionamento Geral",
-  type: "radio",
-  text: "Você já teve atitudes arriscadas, impulsivas ou estranhas que colocaram você ou outras pessoas em perigo?",
-  options: YNP,
-  scale: "YNP",
-  reverse: false,
-  required: false
-},
-{
-  name: "19",
-  section: "Sintomas Psicóticos / Desorganização / Funcionamento Geral",
-  type: "radio",
-  text: "Você costuma dormir mal ou passar longos períodos acordado e agitado?",
-  options: YNP,
-  scale: "YNP",
-  reverse: false,
-  required: false
-},
-{
-  name: "20",
-  section: "Sintomas Psicóticos / Desorganização / Funcionamento Geral",
-  type: "radio",
-  text: "Você percebe relação desses sintomas com uso de álcool ou outras substâncias?",
-  options: YNP,
-  scale: "YNP",
-  reverse: false,
-  required: false
-},
-{
-  name: "21",
-  section: "Sintomas Psicóticos / Desorganização / Funcionamento Geral",
-  type: "radio",
-  text: "Você percebe que melhora com descanso, medicação ou apoio de familiares?",
-  options: YNP,
-  scale: "YNP",
-  reverse: false,
-  required: false
-},
-{
-  name: "22",
-  section: "Sintomas Psicóticos / Desorganização / Funcionamento Geral",
-  type: "radio",
-  text: "Você tem alguém próximo que acompanha você e ajuda nos momentos difíceis?",
-  options: YNP,
-  scale: "YNP",
-  reverse: false,
-  required: false
-}
+  {
+    name: "5",
+    type: "radio",
+    section: "Psicose — Delírios Persecutórios",
+    text: "Você já teve certeza de que estava sendo perseguido, vigiado, seguido, monitorado ou ameaçado, mesmo sem provas claras disso?",
+    options: FREQ5,
+    scale: "FREQ5",
+    reverse: false,
+    required: false
+  },
+  {
+    name: "6",
+    type: "radio",
+    section: "Psicose — Delírios Persecutórios",
+    text: "Você já acreditou que pessoas, grupos, vizinhos, colegas, familiares, empresas, governo ou desconhecidos estavam tentando prejudicar você?",
+    options: FREQ5,
+    scale: "FREQ5",
+    reverse: false,
+    required: false
+  },
+  {
+    name: "7",
+    type: "radio",
+    section: "Psicose — Delírios Persecutórios",
+    text: "Você já mudou sua rotina, evitou lugares, se isolou ou tomou medidas de proteção porque acreditava estar em perigo por perseguição ou ameaça?",
+    options: FREQ5,
+    scale: "FREQ5",
+    reverse: false,
+    required: false
+  },
+  {
+    name: "8",
+    type: "radio",
+    section: "Psicose — Delírios Persecutórios",
+    text: "Mesmo quando outras pessoas tentavam mostrar explicações alternativas, você continuava convencido de que estava sendo perseguido, observado ou ameaçado?",
+    options: FREQ5,
+    scale: "FREQ5",
+    reverse: false,
+    required: false
+  },
 
+  {
+    name: "9",
+    type: "radio",
+    section: "Psicose — Delírios de Referência",
+    text: "Você já sentiu que mensagens na televisão, internet, redes sociais, músicas, placas, números ou conversas de desconhecidos tinham um significado especial direcionado a você?",
+    options: FREQ5,
+    scale: "FREQ5",
+    reverse: false,
+    required: false
+  },
+  {
+    name: "10",
+    type: "radio",
+    section: "Psicose — Delírios de Referência",
+    text: "Você já acreditou que pessoas estavam falando indiretamente sobre você, mandando recados, sinais ou mensagens escondidas sem dizer diretamente?",
+    options: FREQ5,
+    scale: "FREQ5",
+    reverse: false,
+    required: false
+  },
+  {
+    name: "11",
+    type: "radio",
+    section: "Psicose — Delírios de Referência",
+    text: "Você já interpretou coincidências comuns como sinais claros de que algo estava sendo comunicado especificamente para você?",
+    options: FREQ5,
+    scale: "FREQ5",
+    reverse: false,
+    required: false
+  },
+
+  {
+    name: "12",
+    type: "radio",
+    section: "Psicose — Delírios de Grandeza",
+    text: "Você já acreditou ter poderes especiais, missão extraordinária, dons sobrenaturais, capacidade única ou importância muito acima das outras pessoas?",
+    options: FREQ5,
+    scale: "FREQ5",
+    reverse: false,
+    required: false
+  },
+  {
+    name: "13",
+    type: "radio",
+    section: "Psicose — Delírios de Grandeza",
+    text: "Você já acreditou que foi escolhido para uma missão especial, religiosa, espiritual, política, científica ou universal de forma muito intensa e inquestionável?",
+    options: FREQ5,
+    scale: "FREQ5",
+    reverse: false,
+    required: false
+  },
+  {
+    name: "14",
+    type: "radio",
+    section: "Psicose — Delírios de Grandeza",
+    text: "Você já acreditou que tinha uma identidade especial, fama oculta, destino grandioso ou ligação direta com figuras importantes, divinas ou poderosas?",
+    options: FREQ5,
+    scale: "FREQ5",
+    reverse: false,
+    required: false
+  },
+
+  {
+    name: "15",
+    type: "radio",
+    section: "Psicose — Delírios Somáticos",
+    text: "Você já teve certeza de que havia algo muito errado com seu corpo, órgãos, pele, cheiro, cérebro ou funcionamento interno, apesar de exames ou pessoas indicarem o contrário?",
+    options: FREQ5,
+    scale: "FREQ5",
+    reverse: false,
+    required: false
+  },
+  {
+    name: "16",
+    type: "radio",
+    section: "Psicose — Delírios Somáticos",
+    text: "Você já acreditou que seu corpo estava contaminado, invadido, deformado, apodrecendo, sendo controlado ou funcionando de modo impossível ou estranho?",
+    options: FREQ5,
+    scale: "FREQ5",
+    reverse: false,
+    required: false
+  },
+
+  {
+    name: "17",
+    type: "radio",
+    section: "Psicose — Delírios de Controle e Pensamento",
+    text: "Você já sentiu que seus pensamentos estavam sendo colocados na sua mente por outra pessoa, força, entidade, tecnologia ou influência externa?",
+    options: FREQ5,
+    scale: "FREQ5",
+    reverse: false,
+    required: false
+  },
+  {
+    name: "18",
+    type: "radio",
+    section: "Psicose — Delírios de Controle e Pensamento",
+    text: "Você já sentiu que seus pensamentos estavam sendo roubados, retirados ou interrompidos por uma força externa?",
+    options: FREQ5,
+    scale: "FREQ5",
+    reverse: false,
+    required: false
+  },
+  {
+    name: "19",
+    type: "radio",
+    section: "Psicose — Delírios de Controle e Pensamento",
+    text: "Você já acreditou que outras pessoas conseguiam ouvir, ler ou conhecer seus pensamentos sem você falar?",
+    options: FREQ5,
+    scale: "FREQ5",
+    reverse: false,
+    required: false
+  },
+  {
+    name: "20",
+    type: "radio",
+    section: "Psicose — Delírios de Controle e Pensamento",
+    text: "Você já sentiu que seus movimentos, emoções, decisões ou comportamentos estavam sendo controlados por outra pessoa, força, entidade, energia ou tecnologia?",
+    options: FREQ5,
+    scale: "FREQ5",
+    reverse: false,
+    required: false
+  },
+  {
+    name: "21",
+    type: "radio",
+    section: "Psicose — Delírios de Controle e Pensamento",
+    text: "Você já sentiu que seus pensamentos estavam sendo transmitidos para fora da sua cabeça, como se outras pessoas pudessem captá-los?",
+    options: FREQ5,
+    scale: "FREQ5",
+    reverse: false,
+    required: false
+  },
+
+  {
+    name: "22",
+    type: "radio",
+    section: "Psicose — Delírios Erotomaníacos ou Relacionais",
+    text: "Você já teve certeza de que alguém estava apaixonado por você ou enviando sinais românticos, mesmo sem contato claro ou evidência real disso?",
+    options: FREQ5,
+    scale: "FREQ5",
+    reverse: false,
+    required: false
+  },
+  {
+    name: "23",
+    type: "radio",
+    section: "Psicose — Delírios Erotomaníacos ou Relacionais",
+    text: "Você já acreditou que uma pessoa conhecida, famosa, profissional ou distante mantinha uma conexão afetiva secreta com você?",
+    options: FREQ5,
+    scale: "FREQ5",
+    reverse: false,
+    required: false
+  },
+
+  {
+    name: "24",
+    type: "radio",
+    section: "Psicose — Alucinações Auditivas",
+    text: "Você já ouviu vozes quando estava acordado, sem que houvesse alguém falando de fato?",
+    options: FREQ5,
+    scale: "FREQ5",
+    reverse: false,
+    required: false
+  },
+  {
+    name: "25",
+    type: "radio",
+    section: "Psicose — Alucinações Auditivas",
+    text: "Você já ouviu vozes comentando o que você fazia, pensava ou sentia?",
+    options: FREQ5,
+    scale: "FREQ5",
+    reverse: false,
+    required: false
+  },
+  {
+    name: "26",
+    type: "radio",
+    section: "Psicose — Alucinações Auditivas",
+    text: "Você já ouviu vozes conversando entre si sobre você?",
+    options: FREQ5,
+    scale: "FREQ5",
+    reverse: false,
+    required: false
+  },
+  {
+    name: "27",
+    type: "radio",
+    section: "Psicose — Alucinações Auditivas",
+    text: "Você já ouviu vozes mandando você fazer coisas, se proteger, fugir, atacar alguém, se machucar ou obedecer alguma ordem?",
+    options: FREQ5,
+    scale: "FREQ5",
+    reverse: false,
+    required: false
+  },
+  {
+    name: "28",
+    type: "radio",
+    section: "Psicose — Alucinações Auditivas",
+    text: "Quando você ouve vozes ou sons que outras pessoas não ouvem, isso acontece fora do momento de dormir ou acordar?",
+    options: YNP,
+    scale: "YNP",
+    reverse: false,
+    required: false
+  },
+
+  {
+    name: "29",
+    type: "radio",
+    section: "Psicose — Outras Alucinações",
+    text: "Você já viu pessoas, vultos, sombras, animais, luzes, figuras ou cenas que outras pessoas não conseguiam ver?",
+    options: FREQ5,
+    scale: "FREQ5",
+    reverse: false,
+    required: false
+  },
+  {
+    name: "30",
+    type: "radio",
+    section: "Psicose — Outras Alucinações",
+    text: "Você já sentiu toques, insetos, choques, movimentos, presença física ou sensações no corpo sem causa externa identificável?",
+    options: FREQ5,
+    scale: "FREQ5",
+    reverse: false,
+    required: false
+  },
+  {
+    name: "31",
+    type: "radio",
+    section: "Psicose — Outras Alucinações",
+    text: "Você já sentiu cheiros ou gostos estranhos, fortes ou incomuns que outras pessoas não percebiam?",
+    options: FREQ5,
+    scale: "FREQ5",
+    reverse: false,
+    required: false
+  },
+  {
+    name: "32",
+    type: "radio",
+    section: "Psicose — Outras Alucinações",
+    text: "Essas percepções pareciam vir de fora de você, como algo real no ambiente, e não apenas como pensamento, lembrança ou imaginação?",
+    options: FREQ5,
+    scale: "FREQ5",
+    reverse: false,
+    required: false
+  },
+
+  {
+    name: "33",
+    type: "radio",
+    section: "Psicose — Discurso e Pensamento Desorganizado",
+    text: "Você já percebeu que seus pensamentos ficam tão confusos que é difícil organizar uma ideia do começo ao fim?",
+    options: FREQ5,
+    scale: "FREQ5",
+    reverse: false,
+    required: false
+  },
+  {
+    name: "34",
+    type: "radio",
+    section: "Psicose — Discurso e Pensamento Desorganizado",
+    text: "Outras pessoas já disseram que sua fala fica confusa, desconexa, difícil de acompanhar ou mudando de assunto sem ligação clara?",
+    options: FREQ5,
+    scale: "FREQ5",
+    reverse: false,
+    required: false
+  },
+  {
+    name: "35",
+    type: "radio",
+    section: "Psicose — Discurso e Pensamento Desorganizado",
+    text: "Você já percebeu que começa a falar de um assunto e, sem querer, vai para outro muito diferente, perdendo o fio da conversa?",
+    options: FREQ5,
+    scale: "FREQ5",
+    reverse: false,
+    required: false
+  },
+  {
+    name: "36",
+    type: "radio",
+    section: "Psicose — Discurso e Pensamento Desorganizado",
+    text: "Você já teve momentos em que suas frases saíam sem sentido claro, com palavras misturadas ou difíceis de entender para os outros?",
+    options: FREQ5,
+    scale: "FREQ5",
+    reverse: false,
+    required: false
+  },
+  {
+    name: "37",
+    type: "radio",
+    section: "Psicose — Discurso e Pensamento Desorganizado",
+    text: "Você já teve bloqueios de pensamento, como se sua mente parasse de repente no meio de uma fala ou raciocínio?",
+    options: FREQ5,
+    scale: "FREQ5",
+    reverse: false,
+    required: false
+  },
+
+  {
+    name: "38",
+    type: "radio",
+    section: "Psicose — Comportamento Desorganizado",
+    text: "Você já teve períodos em que seu comportamento ficou muito estranho, desorganizado, imprevisível ou difícil de explicar para outras pessoas?",
+    options: FREQ5,
+    scale: "FREQ5",
+    reverse: false,
+    required: false
+  },
+  {
+    name: "39",
+    type: "radio",
+    section: "Psicose — Comportamento Desorganizado",
+    text: "Você já ficou tão confuso ou desorganizado que teve dificuldade de cuidar da higiene, alimentação, casa, trabalho, estudos ou compromissos básicos?",
+    options: FREQ5,
+    scale: "FREQ5",
+    reverse: false,
+    required: false
+  },
+  {
+    name: "40",
+    type: "radio",
+    section: "Psicose — Comportamento Desorganizado",
+    text: "Você já fez coisas em público que depois outras pessoas consideraram muito estranhas, inadequadas, sem sentido ou fora do seu padrão?",
+    options: FREQ5,
+    scale: "FREQ5",
+    reverse: false,
+    required: false
+  },
+  {
+    name: "41",
+    type: "radio",
+    section: "Psicose — Comportamento Desorganizado",
+    text: "Você já passou por fases em que tinha dificuldade de seguir uma rotina simples porque seus pensamentos, percepções ou medos estavam muito desorganizados?",
+    options: FREQ5,
+    scale: "FREQ5",
+    reverse: false,
+    required: false
+  },
+
+  {
+    name: "42",
+    type: "radio",
+    section: "Psicose — Catatonia",
+    text: "Você já teve episódios em que ficou parado, imóvel, sem falar ou sem reagir por muito tempo, mesmo acordado?",
+    options: FREQ5,
+    scale: "FREQ5",
+    reverse: false,
+    required: false
+  },
+  {
+    name: "43",
+    type: "radio",
+    section: "Psicose — Catatonia",
+    text: "Você já teve episódios em que outras pessoas diziam que você parecia travado, congelado, rígido ou desconectado do ambiente?",
+    options: FREQ5,
+    scale: "FREQ5",
+    reverse: false,
+    required: false
+  },
+  {
+    name: "44",
+    type: "radio",
+    section: "Psicose — Catatonia",
+    text: "Você já apresentou movimentos repetitivos, posturas estranhas, agitação sem objetivo ou repetição automática de palavras ou gestos?",
+    options: FREQ5,
+    scale: "FREQ5",
+    reverse: false,
+    required: false
+  },
+
+  {
+    name: "45",
+    type: "radio",
+    section: "Psicose — Sintomas Negativos",
+    text: "Você percebe redução importante da sua vontade de iniciar atividades, cumprir tarefas ou manter uma rotina, mesmo quando não está apenas triste?",
+    options: FREQ5,
+    scale: "FREQ5",
+    reverse: false,
+    required: false
+  },
+  {
+    name: "46",
+    type: "radio",
+    section: "Psicose — Sintomas Negativos",
+    text: "Você sente que ficou emocionalmente mais apagado, com menos expressão facial, menos reação emocional ou menos demonstração de afeto?",
+    options: FREQ5,
+    scale: "FREQ5",
+    reverse: false,
+    required: false
+  },
+  {
+    name: "47",
+    type: "radio",
+    section: "Psicose — Sintomas Negativos",
+    text: "Você fala menos do que antes, responde de forma muito curta ou sente dificuldade de manter conversas espontâneas?",
+    options: FREQ5,
+    scale: "FREQ5",
+    reverse: false,
+    required: false
+  },
+  {
+    name: "48",
+    type: "radio",
+    section: "Psicose — Sintomas Negativos",
+    text: "Você perdeu interesse por contato social, amizades, família, trabalho, estudos ou atividades que antes faziam parte da sua vida?",
+    options: FREQ5,
+    scale: "FREQ5",
+    reverse: false,
+    required: false
+  },
+  {
+    name: "49",
+    type: "radio",
+    section: "Psicose — Sintomas Negativos",
+    text: "Você sente menos prazer, entusiasmo ou motivação nas atividades do dia a dia, mesmo quando não está em uma fase depressiva clara?",
+    options: FREQ5,
+    scale: "FREQ5",
+    reverse: false,
+    required: false
+  },
+  {
+    name: "50",
+    type: "radio",
+    section: "Psicose — Sintomas Negativos",
+    text: "Outras pessoas já disseram que você parece mais frio, distante, isolado, sem iniciativa ou emocionalmente desligado?",
+    options: FREQ5,
+    scale: "FREQ5",
+    reverse: false,
+    required: false
+  },
+
+  {
+    name: "51",
+    type: "radio",
+    section: "Psicose — Insight e Convicção",
+    text: "Quando você acredita em algo estranho ou incomum, é difícil considerar a possibilidade de estar enganado?",
+    options: FREQ5,
+    scale: "FREQ5",
+    reverse: false,
+    required: false
+  },
+  {
+    name: "52",
+    type: "radio",
+    section: "Psicose — Insight e Convicção",
+    text: "Mesmo quando pessoas de confiança discordam da sua percepção, você continua sentindo que sua interpretação é a verdadeira?",
+    options: FREQ5,
+    scale: "FREQ5",
+    reverse: false,
+    required: false
+  },
+  {
+    name: "53",
+    type: "radio",
+    section: "Psicose — Insight e Convicção",
+    text: "Você sente que precisa agir, fugir, se proteger, confrontar alguém ou obedecer algo por causa dessas percepções ou crenças?",
+    options: FREQ5,
+    scale: "FREQ5",
+    reverse: false,
+    required: false
+  },
+
+  {
+    name: "54",
+    type: "radio",
+    section: "Psicose — Duração",
+    text: "Esses sintomas psicóticos, como crenças estranhas, vozes, visões, confusão intensa ou desorganização, duraram pelo menos 1 dia?",
+    options: YNP,
+    scale: "YNP",
+    reverse: false,
+    required: false
+  },
+  {
+    name: "55",
+    type: "radio",
+    section: "Psicose — Duração",
+    text: "Esses sintomas psicóticos duraram menos de 1 mês e depois houve retorno completo ou quase completo ao funcionamento anterior?",
+    options: YNP,
+    scale: "YNP",
+    reverse: false,
+    required: false
+  },
+  {
+    name: "56",
+    type: "radio",
+    section: "Psicose — Duração",
+    text: "Esses sintomas psicóticos duraram pelo menos 1 mês, mesmo que tenham melhorado com tratamento?",
+    options: YNP,
+    scale: "YNP",
+    reverse: false,
+    required: false
+  },
+  {
+    name: "57",
+    type: "radio",
+    section: "Psicose — Duração",
+    text: "Os sinais de alteração, como sintomas psicóticos, isolamento, queda de funcionamento, estranhamento ou sintomas negativos, persistiram por pelo menos 6 meses?",
+    options: YNP,
+    scale: "YNP",
+    reverse: false,
+    required: false
+  },
+  {
+    name: "58",
+    type: "radio",
+    section: "Psicose — Duração",
+    text: "Você teve uma fase anterior aos sintomas mais fortes em que ficou mais isolado, desconfiado, estranho, sem motivação, com queda de rendimento ou comportamento diferente?",
+    options: YNP,
+    scale: "YNP",
+    reverse: false,
+    required: false
+  },
+
+  {
+    name: "59",
+    type: "radio",
+    section: "Psicose — Prejuízo Funcional",
+    text: "Esses sintomas prejudicaram seu trabalho, estudos, vida familiar, relacionamentos, autocuidado, finanças ou vida social?",
+    options: SEVER4,
+    scale: "SEVER4",
+    reverse: false,
+    required: false
+  },
+  {
+    name: "60",
+    type: "radio",
+    section: "Psicose — Prejuízo Funcional",
+    text: "Depois do início desses sintomas, você passou a funcionar pior do que antes em uma ou mais áreas importantes da vida?",
+    options: SEVER4,
+    scale: "SEVER4",
+    reverse: false,
+    required: false
+  },
+  {
+    name: "61",
+    type: "radio",
+    section: "Psicose — Prejuízo Funcional",
+    text: "Esses sintomas fizeram você se afastar de pessoas, abandonar atividades, perder rendimento ou depender mais de outras pessoas para tarefas do dia a dia?",
+    options: SEVER4,
+    scale: "SEVER4",
+    reverse: false,
+    required: false
+  },
+
+  {
+    name: "62",
+    type: "radio",
+    section: "Psicose — Humor e Psicose",
+    text: "Os sintomas psicóticos apareceram somente durante fases de depressão intensa, com tristeza profunda, perda de prazer, culpa, desesperança ou ideias de morte?",
+    options: YNP,
+    scale: "YNP",
+    reverse: false,
+    required: false
+  },
+  {
+    name: "63",
+    type: "radio",
+    section: "Psicose — Humor e Psicose",
+    text: "Os sintomas psicóticos apareceram somente durante fases de euforia, irritabilidade intensa, energia aumentada, pouca necessidade de sono, fala acelerada ou impulsividade?",
+    options: YNP,
+    scale: "YNP",
+    reverse: false,
+    required: false
+  },
+  {
+    name: "64",
+    type: "radio",
+    section: "Psicose — Humor e Psicose",
+    text: "Você já teve delírios, alucinações ou desorganização mesmo quando não estava em episódio depressivo, maníaco ou hipomaníaco?",
+    options: YNP,
+    scale: "YNP",
+    reverse: false,
+    required: false
+  },
+  {
+    name: "65",
+    type: "radio",
+    section: "Psicose — Humor e Psicose",
+    text: "Você já teve pelo menos 2 semanas de sintomas psicóticos sem sintomas importantes de depressão, mania ou hipomania ao mesmo tempo?",
+    options: YNP,
+    scale: "YNP",
+    reverse: false,
+    required: false
+  },
+
+  {
+    name: "66",
+    type: "radio",
+    section: "Psicose — Substâncias e Medicamentos",
+    text: "Os sintomas psicóticos começaram durante ou logo após uso de álcool, maconha, cocaína, crack, anfetaminas, alucinógenos, estimulantes ou outra substância?",
+    options: YNP,
+    scale: "YNP",
+    reverse: false,
+    required: false
+  },
+  {
+    name: "67",
+    type: "radio",
+    section: "Psicose — Substâncias e Medicamentos",
+    text: "Os sintomas psicóticos começaram após início, aumento, retirada ou troca de medicação, como antidepressivos, estimulantes, corticoides, antiparkinsonianos, remédios para dormir ou outras medicações?",
+    options: YNP,
+    scale: "YNP",
+    reverse: false,
+    required: false
+  },
+  {
+    name: "68",
+    type: "radio",
+    section: "Psicose — Substâncias e Medicamentos",
+    text: "Os sintomas psicóticos persistiram mesmo depois que o efeito esperado da substância ou medicação já deveria ter passado?",
+    options: YNP,
+    scale: "YNP",
+    reverse: false,
+    required: false
+  },
+  {
+    name: "69",
+    type: "radio",
+    section: "Psicose — Substâncias e Medicamentos",
+    text: "Você percebe piora clara de paranoia, vozes, visões, confusão ou sensação de ameaça quando usa álcool, drogas ou determinadas medicações?",
+    options: FREQ5,
+    scale: "FREQ5",
+    reverse: false,
+    required: false
+  },
+
+  {
+    name: "70",
+    type: "radio",
+    section: "Psicose — Condições Médicas",
+    text: "Os sintomas psicóticos começaram junto com febre, convulsão, desmaio, traumatismo craniano, alteração neurológica, confusão mental aguda ou doença clínica importante?",
+    options: YNP,
+    scale: "YNP",
+    reverse: false,
+    required: false
+  },
+  {
+    name: "71",
+    type: "radio",
+    section: "Psicose — Condições Médicas",
+    text: "Os sintomas psicóticos começaram junto com alteração hormonal, problema neurológico, infecção, doença autoimune, tumor, epilepsia, demência ou outra condição médica conhecida?",
+    options: YNP,
+    scale: "YNP",
+    reverse: false,
+    required: false
+  },
+  {
+    name: "72",
+    type: "radio",
+    section: "Psicose — Condições Médicas",
+    text: "Durante os sintomas, você também apresentou desorientação, confusão intensa, sonolência, alteração de consciência ou dificuldade de reconhecer onde estava?",
+    options: YNP,
+    scale: "YNP",
+    reverse: false,
+    required: false
+  },
+
+  {
+    name: "73",
+    type: "radio",
+    section: "Psicose — Diferencial com Trauma e Dissociação",
+    text: "As vozes, visões ou sensações estranhas aparecem principalmente quando você lembra de traumas, se sente ameaçado ou entra em crise emocional intensa?",
+    options: FREQ5,
+    scale: "FREQ5",
+    reverse: false,
+    required: false
+  },
+  {
+    name: "74",
+    type: "radio",
+    section: "Psicose — Diferencial com Trauma e Dissociação",
+    text: "Quando essas experiências acontecem, você sente que está fora do corpo, no automático, em sonho ou desconectado da realidade?",
+    options: FREQ5,
+    scale: "FREQ5",
+    reverse: false,
+    required: false
+  },
+  {
+    name: "75",
+    type: "radio",
+    section: "Psicose — Diferencial com TOC",
+    text: "As ideias estranhas ou assustadoras aparecem como pensamentos invasivos que você reconhece como indesejados, exagerados ou possivelmente irracionais?",
+    options: YNP,
+    scale: "YNP",
+    reverse: false,
+    required: false
+  },
+  {
+    name: "76",
+    type: "radio",
+    section: "Psicose — Diferencial com TOC",
+    text: "Você tenta neutralizar essas ideias com rituais, checagens, repetições, orações, contagens, limpeza ou busca de garantias para reduzir ansiedade?",
+    options: FREQ5,
+    scale: "FREQ5",
+    reverse: false,
+    required: false
+  },
+
+  {
+    name: "77",
+    type: "radio",
+    section: "Psicose — Neurodesenvolvimento",
+    text: "Antes dos sintomas psicóticos, você já tinha desde a infância dificuldades importantes de comunicação, interação social, rigidez, interesses restritos ou comportamento muito peculiar?",
+    options: YNP,
+    scale: "YNP",
+    reverse: false,
+    required: false
+  },
+  {
+    name: "78",
+    type: "radio",
+    section: "Psicose — Neurodesenvolvimento",
+    text: "Mesmo tendo dificuldades desde a infância, você apresentou depois delírios ou alucinações claros que não existiam anteriormente?",
+    options: YNP,
+    scale: "YNP",
+    reverse: false,
+    required: false
+  },
+
+  {
+    name: "79",
+    type: "radio",
+    section: "Psicose — Cultura e Religiosidade",
+    text: "Suas crenças ou experiências são compartilhadas e aceitas dentro da sua religião, cultura, comunidade espiritual ou grupo social?",
+    options: YNP,
+    scale: "YNP",
+    reverse: false,
+    required: false
+  },
+  {
+    name: "80",
+    type: "radio",
+    section: "Psicose — Cultura e Religiosidade",
+    text: "Mesmo dentro do seu contexto religioso ou cultural, outras pessoas consideram suas experiências extremas, perigosas, incomuns ou fora do esperado?",
+    options: YNP,
+    scale: "YNP",
+    reverse: false,
+    required: false
+  },
+
+  {
+    name: "81",
+    type: "radio",
+    section: "Psicose — Risco e Segurança",
+    text: "Alguma voz, crença, visão ou sensação já mandou você se machucar, machucar outra pessoa, fugir, se esconder, atacar ou fazer algo perigoso?",
+    options: YNP,
+    scale: "YNP",
+    reverse: false,
+    required: false
+  },
+  {
+    name: "82",
+    type: "radio",
+    section: "Psicose — Risco e Segurança",
+    text: "Você sente que pode obedecer a vozes, sinais, mensagens ou forças externas mesmo que isso coloque você ou outra pessoa em risco?",
+    options: SEVER4,
+    scale: "SEVER4",
+    reverse: false,
+    required: false
+  },
+  {
+    name: "83",
+    type: "radio",
+    section: "Psicose — Risco e Segurança",
+    text: "Por causa dessas experiências, você já pensou em se matar, se ferir, atacar alguém ou agir para se proteger de uma ameaça percebida?",
+    options: SEVER4,
+    scale: "SEVER4",
+    reverse: false,
+    required: false
+  },
+  {
+    name: "84",
+    type: "radio",
+    section: "Psicose — Risco e Segurança",
+    text: "Atualmente, você sente risco de perder o controle, se machucar, machucar alguém ou agir impulsivamente por causa de vozes, crenças, medo ou sensação de ameaça?",
+    options: SEVER4,
+    scale: "SEVER4",
+    reverse: false,
+    required: false
+  },
+
+  {
+    name: "85",
+    type: "radio",
+    section: "Psicose — Histórico Familiar",
+    text: "Algum familiar biológico próximo já recebeu diagnóstico de esquizofrenia, transtorno psicótico, transtorno bipolar com psicose ou internação psiquiátrica por perda de contato com a realidade?",
+    options: YNP,
+    scale: "YNP",
+    reverse: false,
+    required: false
+  },
+  {
+    name: "86",
+    type: "radio",
+    section: "Psicose — Histórico Familiar",
+    text: "Algum familiar biológico próximo já apresentou vozes, visões, crenças persecutórias, comportamento muito desorganizado ou períodos de afastamento intenso da realidade?",
+    options: YNP,
+    scale: "YNP",
+    reverse: false,
+    required: false
+  }
 ];
-
+    
 const INDICATORS_CONFIG = {};
 
     /**************************************************************
